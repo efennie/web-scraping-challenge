@@ -12,6 +12,7 @@ import requests
 
 def scrape():
 # %%
+    data = {}
     #splinter set up
     executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
@@ -113,4 +114,4 @@ def scrape():
     # %%
 
     scraped_data = {"News Article Title": news_title, "News Blurb": news_p, "Featured Image":link, "Mars Facts":html_table, "Hemisphere Images":hemisphere_image_urls}
-    return scraped_data
+    return data
