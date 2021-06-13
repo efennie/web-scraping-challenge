@@ -114,4 +114,4 @@ def scrape():
     # %%
 
     scraped_data = {"News Article Title": news_title, "News Blurb": news_p, "Featured Image":link, "Mars Facts":html_table, "Hemisphere Images":hemisphere_image_urls}
-    return data
+    return scraped_data
